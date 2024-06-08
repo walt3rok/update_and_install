@@ -17,6 +17,13 @@ else
         sudo apt update
         sudo apt upgrade -y
         echo "System update and upgrade completed."
+        # Perform autoremove
+
+        echo "Performing autoremove..."
+
+        sudo apt autoremove -y
+
+        echo "Autoremove completed."
     fi
 fi
 
